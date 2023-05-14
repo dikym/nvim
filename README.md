@@ -1,22 +1,14 @@
-# nvim
-<<<<<<< HEAD
-My neovim config
-=======
+# My neovim config
 
-my nvim config file. stolen from https://github.com/KevinPalowa/nvim
+This is my Neovim configuration file. Heavily inspired by https://github.com/nauvalazhar/nvim.
 
-## Setup
-- Font: [JetBrainsMono NF](https://www.nerdfonts.com/font-downloads)
-- Terminal: [Alacritty](https://github.com/alacritty/alacritty)
-- Shell: [ZSH](https://ohmyz.sh/)
-- Config: https://gist.github.com/nauvalazhar/cc93db74e11f1cd3d400aba6aeaf7108
+## Installation
 
+To install the pre-configured Neovim setup, follow these steps:
 
-## Sneak Peek
+1. Ensure that Neovim is installed on your system. If it isn't, you can install it by running the command `sudo apt-get install neovim`.
+2. Open a terminal on your operating system.
+3. Clone the Neovim configuration repository by running the command `git clone https://github.com/dikym/nvim.git ~/.config/nvim`.
+4. Open Neovim by running the command `nvim`.
 
-<img width="1680" alt="image" src="https://user-images.githubusercontent.com/14899175/201462335-5c7a2140-9891-4bf7-adc2-e851ca2cd6da.png">
-
-## Neofetch
-
-<img width="664" alt="image" src="https://user-images.githubusercontent.com/14899175/201640239-38def860-9eaf-4c7c-a597-5ceb3a71fc8e.png">
->>>>>>> 2a1b8a6 (Add nvim folder)
+Once this is done, your Neovim configuration is ready to use. Enjoy!
