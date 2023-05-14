@@ -1,6 +1,6 @@
 # My neovim config
 
-This is my Neovim configuration file. Heavily inspired by https://github.com/nauvalazhar/nvim.
+This is my Neovim configuration file. Stolen from https://github.com/nauvalazhar/nvim.
 
 ## Installation
 
