@@ -31,7 +31,7 @@ local sections = {
 require("lualine").setup({
 	options = {
 		theme = "catppuccin",
-		component_separators = { left = "->", right = "<-" },
+		component_separators = { left = "", right = "" },
 		disabled_filetypes = {
 			"NvimTree",
 			"Trouble",
