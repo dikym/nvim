@@ -17,31 +17,31 @@ end
 
 --   פּ ﯟ   some other good icons
 local kind_icons = {
-	Class = " ",
+	Class = "󱦜 ",
 	Color = " ",
-	Constant = "ﲀ ",
-	Constructor = " ",
-	Enum = "練",
+	Constant = "󰞂 ",
+	Constructor = " ",
+	Enum = " ",
 	EnumMember = " ",
 	Event = " ",
 	Field = " ",
-	File = "",
-	Folder = " ",
-	Function = " ",
-	Interface = "ﰮ ",
-	Keyword = " ",
+	File = "󰈙",
+	Folder = " ",
+	Function = "󰊕 ",
+	Interface = "󰜰 ",
+	Keyword = "󰌋 ",
 	Method = " ",
-	Module = " ",
-	Operator = "",
+	Module = " ",
+	Operator = "󱓉",
 	Property = " ",
-	Reference = " ",
+	Reference = "󰈝 ",
 	Snippet = " ",
 	Struct = " ",
-	Text = " ",
-	TypeParameter = " ",
-	Unit = "塞",
-	Value = " ",
-	Variable = " ",
+	Text = "󰉿 ",
+	TypeParameter = "󰊄 ",
+	Unit = "󰑭 ",
+	Value = "󰎠 ",
+	Variable = " ",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -68,7 +68,7 @@ cmp.setup({
 		["<Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
-      elseif check_backspace() then
+			elseif check_backspace() then
 				fallback()
 			else
 				fallback()
