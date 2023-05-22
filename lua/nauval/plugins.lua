@@ -1,13 +1,13 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
 end
 vim.opt.rtp:prepend(lazypath)
 
@@ -25,20 +25,20 @@ local plugins = {
 			"nvim-lua/plenary.nvim",
 		},
 	},
-  {
-  "aurum77/live-server.nvim",
-    build = function()
-      require"live_server.util".install()
-    end,
-    cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
-  },
-  -- gitSign
+	{
+		"aurum77/live-server.nvim",
+		build = function()
+			require("live_server.util").install()
+		end,
+		cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+	},
+	-- gitSign
 	"lukas-reineke/indent-blankline.nvim", -- indentline
 	{
 		"goolord/alpha-nvim",
 		dependencies = { "kyazdani42/nvim-web-devicons" },
 	},
-  -- alpha
+	-- alpha
 	"kyazdani42/nvim-tree.lua", -- nvim Tree
 	"folke/which-key.nvim",
 	"norcalli/nvim-colorizer.lua",
@@ -53,7 +53,7 @@ local plugins = {
 	-- Color Scheme
 	"folke/tokyonight.nvim",
 	{ "catppuccin/nvim", name = "catppuccin" },
-  "olimorris/onedarkpro.nvim", -- cmp plugins
+	"olimorris/onedarkpro.nvim", -- cmp plugins
 	"hrsh7th/nvim-cmp", -- The completion plugin
 	"hrsh7th/cmp-buffer", -- buffer completions
 	"hrsh7th/cmp-path", -- path completions
@@ -133,7 +133,7 @@ local plugins = {
 		end,
 	},
 
-	"ahmedkhalf/project.nvim"
+	"ahmedkhalf/project.nvim",
 }
 
 local opts = {}
