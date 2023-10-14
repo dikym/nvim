@@ -33,7 +33,10 @@ local plugins = {
 		cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
 	},
 	-- gitSign
-	"lukas-reineke/indent-blankline.nvim", -- indentline
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		version = "2.20.8",
+	}, -- indentline
 	{
 		"goolord/alpha-nvim",
 		dependencies = { "kyazdani42/nvim-web-devicons" },
@@ -86,6 +89,7 @@ local plugins = {
 	},
 	{
 		"j-hui/fidget.nvim",
+		branch = "legacy",
 		config = function()
 			require("fidget").setup({})
 		end,
