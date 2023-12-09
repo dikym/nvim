@@ -4,6 +4,8 @@ This is my Neovim configuration file. Stolen from https://github.com/nauvalazhar
 
 ## Installation
 
+Require Neovim 0.9.4+
+
 To install the pre-configured Neovim setup, follow these steps:
 
 1. Ensure that Neovim is installed on your system. If it isn't, you can install it by running the command `sudo apt-get install neovim`.
