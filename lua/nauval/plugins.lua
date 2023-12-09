@@ -104,7 +104,7 @@ local plugins = {
 		"nvim-treesitter/nvim-treesitter",
 		cmd = "TSUpdate",
 	},
-	"p00f/nvim-ts-rainbow",
+	"HiPhish/nvim-ts-rainbow2",
 
 	"windwp/nvim-ts-autotag",
 
@@ -116,7 +116,14 @@ local plugins = {
 
 	-- Comment
 	"numToStr/Comment.nvim",
-	"JoosepAlviste/nvim-ts-context-commentstring",
+	{
+		"JoosepAlviste/nvim-ts-context-commentstring",
+		config = function()
+			require("ts_context_commentstring").setup({
+				enable_autocmd = false,
+			})
+		end,
+	},
 
 	-- bufferline
 	{ "akinsho/bufferline.nvim", dependencies = "kyazdani42/nvim-web-devicons" },
